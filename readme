@@ -1,1 +1,51 @@
-fdfd
+Estrutura básica:
+
+CSS: Há duas pastas dentro da pasta raiz de CSS, o conteudo dessas duas pastas não devem ser alterado em hipótese alguma.
+	Externo: CSS que não é desenvolvido pelo equipe de produção.
+	Default: CSS que é gerado via Sass através do "gerador-css.bat"
+	customizacao-curso: Este arquivo deve ser utilizado para gerar a sobreposição de regras que estão definidas no css da pasta default.
+
+JS: Há somente uma pasta dentro da raiz da pasta JS, onde fica localizado os arquivos externos, que não devem ser alterados em hipótese alguma também, somente por um programador.
+
+PARTIALS: Pasta onde ficam as partes que são parciais de montagem da index.html. Atualmente a index não contem nenhum conteudo, este conteudo foi dividido em partes específicas para facilitar a manutenção.
+
+SASS: Pasta onde ficam os arquivos sass, o único arquivo que pode ser alterado nesta pasta é o arquivo _variables.scss, onde há a informação de cores de cada unidade, bem como a quantidade de cores.
+
+PAGINAS: Pasta onde ficam as páginas do curso.
+
+FONTS: Pasta onde ficam as fontes utilizadas no curso, com excessão das fonts que são carregadas via CDN.
+
+IMAGES: Pasta onde deve ficar toda e qualquer imagem do curso.
+
+----------------------------------------------------------------------
+
+Para ajustar a cor da barra de progresso e sumário quando o curso tem mais unidades que o template: 
+- arquivo estilo.scss, linha 5:
+	@include configuracao-unidade(4, $default-orange-color);
+- alterar para o número de unidades do curso e executar o gerador-css.bat.	
+
+----------------------------------------------------------------------
+
+PDF: atualizar os links para o PDF nos arquivos:
+- partials/cabeçalho.html: <a class="bt-menu-pdf" href="documentos/sigla_impressao.pdf" target="_blank">
+- partials/sumario.html: <a class="bt-menu-pdf menu-link" href="documentos/sigla_impressao.pdf" target="_blank">
+
+----------------------------------------------------------------------
+
+ATUALIZAÇÃO DE CURSOS:
+Para atualizar as imagens dos cursos que já têm PRÉ-LOADER:
+
+1 - ATUALIZAR O ARQUIVO DE IMAGENS:
+1.1 - Abrir o console (PowerShell na pasta “preloader” - botão direito do mouse numa área em branco da janela);
+1.2 - Executar as seguintes instruções:
+		<preloader> npm install (aguardar a conclusão);
+<preloader> node src.js (aguardar a conclusão);
+		Após concluído o passo anterior (node src.js), apagar a pasta “node-modules”.
+
+2 - Abrir o arquivo “index.html”, procurar pela instrução: “environment: “dev””, e comentar essa linha; “//environment: “dev”
+
+3 - Também dentro de “index.html”, procurar o “default-page” e verificar se está “setado” para o valor “01”;
+
+4 - Para concluir o processo de criação do PRELOADER, commitar o curso inteiro.
+
+

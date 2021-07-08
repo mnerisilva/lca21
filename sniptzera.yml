@@ -1,0 +1,1203 @@
+- trigger: cl
+  scope: javascript
+  description: console.log
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        console.log(${1:obj});${2}
+
+- trigger: cd
+  scope: javascript
+  description: console.dir
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        console.dir(${1:obj});${2}
+
+- trigger: ce
+  scope: javascript
+  description: console.error
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        console.error(${1:obj});${2}
+
+- trigger: cll
+  scope: javascript
+  description: console.log
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        console.log('${1:obj}:', ${1:obj});${2}
+
+- trigger: cdd
+  scope: javascript
+  description: console.dir
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        console.dir('${1:obj}:', ${1:obj});${2}
+
+- trigger: cee
+  scope: javascript
+  description: console.error
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        console.error('${1:obj}:', ${1:obj});${2}
+
+- trigger: ae
+  scope: javascript
+  description: document.addEventListener
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:document}.addEventListener('${2:event}', function(e) {
+          ${3}
+        });
+
+- trigger: ac
+  scope: javascript
+  description: document.appendChild
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:document}.appendChild(${2:elem});${3}
+
+- trigger: rc
+  scope: javascript
+  description: document.removeChild
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:document}.removeChild(${2:elem});${3}
+
+- trigger: cel
+  scope: javascript
+  description: document.createElement
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:document}.createElement(${2:elem});${3}
+
+- trigger: gi
+  scope: javascript
+  description: document.getElementById
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:document}.getElementById('${2:id}');${3}
+
+- trigger: gc
+  scope: javascript
+  description: document.getElementsByClassName
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:document}.getElementsByClassName('${2:class}');${3}
+
+- trigger: gt
+  scope: javascript
+  description: document.getElementsByTagName
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:document}.getElementsByTagName('${2:tag}');${3}
+
+- trigger: qs
+  scope: javascript
+  description: document.querySelector
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:document}.querySelector('${2:selector}');${3}
+
+- trigger: qsa
+  scope: javascript
+  description: document.querySelectorAll
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:document}.querySelectorAll('${2:selector}');${3}
+
+- trigger: fe
+  scope: javascript
+  description: forEach
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:myArray}.forEach(function (${2:elem}) {
+          ${3}
+        });
+
+- trigger: fi
+  scope: javascript
+  description: for in
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        for (${1:prop} in ${2:obj}) {
+          if (${2:obj}.hasOwnProperty(${1:prop})) {
+            ${3}
+          }
+        }
+
+- trigger: fn
+  scope: javascript
+  description: function
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        function ${1:methodName} (${2:arguments}) {
+          ${3}
+        }
+
+- trigger: afn
+  scope: javascript
+  description: anonymous function
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        function (${1:arguments}) {
+          ${2}
+        }
+
+- trigger: pr
+  scope: javascript
+  description: prototype
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        ${1:ClassName}.prototype.${2:methodName} = function (${3:arguments}) {
+          ${4}
+        };
+
+- trigger: sw
+  scope: javascript
+  description: switch statement
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        switch(${1:expression}) {
+          case ${2:value}:
+            ${3}
+            break;
+          default:
+            break;
+        }
+
+- trigger: si
+  scope: javascript
+  description: setInterval
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        setInterval(function() {
+          ${2}
+        }, ${1:delay});
+
+- trigger: st
+  scope: javascript
+  description: setTimeout
+  tag: VanillaJS
+  tagHide: true
+  source: system
+  text: |
+        setTimeout(function() {
+          ${2}
+        }, ${1:delay});
+
+- scope: html
+  trigger: cx_importante
+  mTime: 1502818724589
+  text: |
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <!-- caixa IMPORTANTE -->
+                <div class="caixa caixa-estatica" data-type="Importante" data-id="1">
+                    <div class="caixa-botao"></div>
+                    <div class="caixa-hover-text"></div>
+                    <div class="caixa-conteudo">
+                        <h2 class="titulo-caixa"></h2>
+                        <p>Assista ao vídeo “O sentido de aprender e o sucesso na EAD” e veja algumas abordagens sobre o sentido da educação e o sentido de aprender.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+- trigger: figura
+  scope: html
+  mTime: 1503336870644
+  text: |
+        <p class="p-figuras">Figura 3 - Hipátia de Alexandria - Gravura de Elbert Hubbard</p>
+                        
+            <img class="img-responsive centraliza-recurso" src="images/fotos/figura3.png">
+                    
+        <p class="p-legenda">Fonte: Senac EaD (2017).</p>
+
+- trigger: tooltip
+  scope: html
+  mTime: 1498049481178
+  text: |
+        <a href="#" data-page="2" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Descrição tooltip">palavratooltip</a>
+
+- trigger: cx_destaque
+  scope: html
+  mTime: 1504095760552
+  text: |
+        <!-- caixa-destaque -->
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <div class="caixa-destaque" data-id="1">
+                    <p class="alinha-centro-texto"><strong>Exemplo de caixa destaque.</strong></p>
+                    <p>A docência na EAD contempla e se constitui de diversos elementos articulados, demonstrando que não se trata de uma ação estática, ao contrário, está inserida num processo ativo, em constante movimento, num espaço repleto de elementos objetivos e subjetivos.</p>
+                 </div>
+            </div>
+        </div>
+
+- trigger: accordion
+  scope: html
+  mTime: 1502818309480
+  text: |
+        <div class="row">
+            <div class="col-md-10 centraliza-recurso">
+        
+                            <div class="accordion" data-id="1">
+                                <div class="accordion-element-container">
+                                    <div class="accordion-title">
+                                        TITULO 1<ins class="seta-accordion"></ins>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>
+                                            É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion-element-container">
+                                    <div class="accordion-title">
+                                        TITULO 2<ins class="seta-accordion"></ins>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <p>
+                                            É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+        
+             </div>
+        </div>
+        
+- trigger: cx_recapitulando
+  scope: html
+  mTime: 1502818873343
+  text: |
+        <div class="row">
+           <div class="col-lg-9 col-md-9 col-sm-10 col-xs-12 centraliza-recurso">
+                <div class="estudo-de-caso-container">
+                <div class="estudo-de-caso" data-type="Recapitulando">
+                    <div class="estudo-de-caso-tag">
+                    <span class="bt-recapitulando"></span>
+                    Recapitulando
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+- trigger: cx_fim_slide
+  scope: html
+  mTime: 1502818891276
+  text: |
+        <div class="row">
+          <div class="col-lg-6 col-md-7 col-sm-8 centraliza-recurso">
+            <div class="wrapper caixa-fim-slide">
+              <p>Na sequência, você vai aprender sobre as operações matemáticas básicas, suas regras e propriedades.</p>
+            </div>
+          </div>
+        </div>
+
+- trigger: cx_exemplo
+  scope: html
+  mTime: 1502818617369
+  text: |
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <!-- caixa EXEMPLO -->
+                <div class="caixa caixa-estatica" data-type="Exemplo" data-id="1">
+                    <div class="caixa-botao"></div>
+                    <div class="caixa-hover-text"></div>
+                    <div class="caixa-conteudo">
+                        <h2 class="titulo-caixa"></h2>
+                        <p>Assista ao vídeo “O sentido de aprender e o sucesso na EAD” e veja algumas abordagens sobre o sentido da educação e o sentido de aprender.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+- trigger: cx_saibamais
+  scope: html
+  mTime: 1502818552941
+  text: |
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <!-- caixa SAIBA MAIS -->
+                <div class="caixa caixa-estatica" data-type="saiba-mais" data-id="1">
+                    <div class="caixa-botao"></div>
+                    <div class="caixa-hover-text"></div>
+                    <div class="caixa-conteudo">
+                        <h2 class="titulo-caixa"></h2>
+                        <p>Assista ao vídeo “O sentido de aprender e o sucesso na EAD” e veja algumas abordagens sobre o sentido da educação e o sentido de aprender.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+- trigger: cx_informacao
+  scope: html
+  mTime: 1502818590881
+  text: |
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <!-- caixa INFORMAÇÃO -->
+                <div class="caixa caixa-estatica" data-type="Informacao" data-id="1">
+                    <div class="caixa-botao"></div>
+                    <div class="caixa-hover-text"></div>
+                    <div class="caixa-conteudo">
+                        <h2 class="titulo-caixa"></h2>
+                        <p>Assista ao vídeo “O sentido de aprender e o sucesso na EAD” e veja algumas abordagens sobre o sentido da educação e o sentido de aprender.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+- trigger: lista_simples_romanos
+  scope: html
+  mTime: 1502817994632
+  text: |
+        <ol class="lista-estatica" data-style="04">
+            <li class="lista-item">
+               <span class="rotulo-lista">A qualificação exigida dos participantes;</span>
+            </li>
+        </ol>
+
+- scope: html
+  trigger: slide_down
+  mTime: 1502903440028
+  text: |
+        <div class="row">
+                <div class="col-md-offset-2 col-lg-offset-2 col-lg-4 col-md-4 col-sm-6">
+        
+                  <div class="caixa-slidedown" data-id="1">
+                    <div class="caixa-slidedown-cabecalho">
+                      <span class="slidedown-titulo">Custo</span>
+                    </div>
+                    <div class="caixa-slidedown-conteiner">
+                      <p>É todo o aporte financeiro que uma empresa precisa desembolsar para a produção de um produto. Ou, pelo ponto de vista do consumidor, é quanto ele irá desembolsar para adquirir o bem ou o serviço.</p>
+                    </div>
+                    <div class="caixa-slidedown-fechar">
+                      <div class="seta"></div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                  <div class="caixa-slidedown" data-id="1">
+                    <div class="caixa-slidedown-cabecalho">
+                      <span class="slidedown-titulo">Valor</span>
+                    </div>
+                    <div class="caixa-slidedown-conteiner">
+                      <p>Significa o quanto aquele bem ou serviço representa para o consumidor. Por exemplo, quanto custa a assinatura de uma TV a cabo em um grande centro? E em uma área afastada que não possui sinal de TV aberta? Os custos podem ser os mesmos, mas o valor que a população da região afastada vai dar a esse serviço será muito maior.</p>
+                    </div>
+                    <div class="caixa-slidedown-fechar">
+                      <div class="seta"></div>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+- trigger: manuscrito
+  scope: html
+  mTime: 1497977393938
+  text: |
+        <p class="destaque-manuscrito"></p>
+
+- trigger: cx_dica
+  scope: html
+  mTime: 1502818707638
+  text: |
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <!-- caixa DICA -->
+                <div class="caixa caixa-estatica" data-type="Dica" data-id="1">
+                    <div class="caixa-botao"></div>
+                    <div class="caixa-hover-text"></div>
+                    <div class="caixa-conteudo">
+                        <h2 class="titulo-caixa"></h2>
+                        <p>Assista ao vídeo “O sentido de aprender e o sucesso na EAD” e veja algumas abordagens sobre o sentido da educação e o sentido de aprender.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+- trigger: lista_numero
+  scope: html
+  mTime: 1502888419456
+  text: |
+        <ul class="lista-estatica" data-style="02">
+            <li class="lista-item">Item</li>
+        </ul>
+
+- trigger: cx_atencao
+  scope: html
+  mTime: 1502818794277
+  text: |
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <!-- caixa ATENÇÃO -->
+                <div class="caixa caixa-estatica" data-type="Atencao" data-id="1">
+                    <div class="caixa-botao"></div>
+                    <div class="caixa-hover-text"></div>
+                    <div class="caixa-conteudo">
+                        <h2 class="titulo-caixa"></h2>
+                        <p>Assista ao vídeo “O sentido de aprender e o sucesso na EAD” e veja algumas abordagens sobre o sentido da educação e o sentido de aprender.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+- trigger: link_externo
+  scope: html
+  mTime: 1502817623919
+  text: |
+        <a href="#" title="Clique aqui para acessar" target="_blank">clique aqui para link externo <i class="fa fa-external-link"></i></a>
+
+- trigger: lista_simples_bullet
+  scope: html
+  mTime: 1502818044512
+  text: |
+        <ul class="lista-estatica" data-style="01">
+            <li class="lista-item">Item</li>
+        </ul>
+
+- trigger: lista_simples_123
+  scope: html
+  mTime: 1502818071232
+  text: |
+        <ul class="lista-estatica" data-style="02">
+            <li class="lista-item">Item</li>
+        </ul>
+
+- trigger: lista_simples_abc
+  scope: html
+  mTime: 1502818090325
+  text: |
+        <ul class="lista-estatica" data-style="03">
+            <li class="lista-item">Item</li>
+        </ul>
+
+- trigger: tag_titulo
+  scope: html
+  mTime: 1502818346800
+  text: |
+        <p class="tag-titulo">Exemplo Tag Título</p>
+
+- trigger: citacao
+  scope: html
+  mTime: 1502818413462
+  text: |
+        <!-- caixa CITACAO -->
+        <div class="caixa-citacao col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+            <div class="caixa-inner-box">
+                <p class="texto-citacao">"Quando transpomos esse conceito para o <em>marketing</em>, queremos definir ações realizadas de maneira pouco convencional e com orçamentos “apertados”."</p>
+                <p class="fonte-citacao">(LEVISON, 1982)</p>
+            </div>
+        </div>
+
+- trigger: cx_reflita
+  scope: html
+  mTime: 1502818528847
+  text: |
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <!-- caixa REFLITA -->
+                <div class="caixa caixa-estatica" data-type="Reflita" data-id="1">
+                    <div class="caixa-botao"></div>
+                    <div class="caixa-hover-text"></div>
+                    <div class="caixa-conteudo">
+                        <h2 class="titulo-caixa"></h2>
+                        <p>Assista ao vídeo “O sentido de aprender e o sucesso na EAD” e veja algumas abordagens sobre o sentido da educação e o sentido de aprender.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+- trigger: cx_objetivo
+  scope: html
+  mTime: 1502818695190
+  text: |
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <!-- caixa OBJETIVO -->
+                <div class="caixa caixa-estatica" data-type="Objetivo" data-id="1">
+                    <div class="caixa-botao"></div>
+                    <div class="caixa-hover-text"></div>
+                    <div class="caixa-conteudo">
+                        <h2 class="titulo-caixa"></h2>
+                        <p>Assista ao vídeo “O sentido de aprender e o sucesso na EAD” e veja algumas abordagens sobre o sentido da educação e o sentido de aprender.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+- trigger: cx_videoaula
+  scope: html
+  mTime: 1502818765125
+  text: |
+        <div class="row">
+            <div class="col-lg-6 col-md-9 centraliza-recurso">
+                <!-- caixa VIDEOAULA  -->
+                <div class="caixa caixa-estatica" data-type="Videoaula" data-id="1">
+                    <div class="caixa-botao"></div>
+                    <div class="caixa-hover-text"></div>
+                    <div class="caixa-conteudo">
+                        <h2 class="titulo-caixa"></h2>
+                        <p>Assista ao vídeo “O sentido de aprender e o sucesso na EAD” e veja algumas abordagens sobre o sentido da educação e o sentido de aprender.</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+- trigger: aba_01
+  scope: html
+  mTime: 1504096194238
+  text: |
+        <!--------------- INÍCIO ABA 01 --------------->
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 centraliza-recurso">
+                <div class="aba hidden-xs" data-style="01" data-fallback="accordion" data-content="centralize" data-page="19">
+                    <div class="cabecalho">
+                        <div class="link active" data-id="1" data-title="Artigos não críticos">
+                            Artigos não críticos
+                        </div>
+                        <div class="link" data-id="2" data-title="Artigos semicríticos">
+                            Artigos semicríticos
+                        </div>
+                        <div class="link" data-id="3" data-title="Artigos críticos">
+                            Artigos críticos
+                        </div>
+                    </div>
+                    <div class="conteudos">
+                        <div class="content active" data-id="1">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>São os artigos que entram em contato com a pele íntegra. Um exemplo são os papagaios e comadres (Figura 05).</p>
+                                    <p class="p-figuras">Figura 05 – Papagaio e comadre</p>
+        
+                                    <img class="img-responsive centraliza-recurso" src="images/fotos/figura_5.png">
+        
+                                    <p class="p-figuras">Fonte: Senac EaD (2017).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content" data-id="2">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>São os artigos que têm contato direto com a mucosa e pele não íntegra. Um exemplo é o inalador (Figura 06). </p>
+                                    <p class="p-figuras">Figura 06 – Inalador</p>
+        
+                                    <img class="img-responsive centraliza-recurso" src="images/fotos/figura_6.png">
+        
+                                    <p class="p-figuras">Fonte: Senac EaD (2017).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content" data-id="3">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <p>São os artigos introduzidos em contato percutâneo, tem-se como exemplo os instrumentais cirúrgicos (Figura 07).</p>
+                                    <p class="p-figuras">Figura 07 – Instrumentais cirúrgicos</p>
+        
+                                    <img class="img-responsive centraliza-recurso" src="images/fotos/figura_7.png">
+        
+                                    <p class="p-figuras">Fonte: Senac EaD (2017).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------- FIM ABA 01 --------------->
+
+- trigger: aba_02
+  scope: html
+  mTime: 1504096252284
+  text: |
+        <!--------------- INÍCIO ABA 02 --------------->
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 centraliza-recurso">
+                <div class="aba hidden-xs" data-style="02" data-fallback="accordion" data-content="centralize">
+                    <div class="cabecalho">
+                        <div class="link active" data-id="1" data-title="Material de Embalagem">
+                            <img src="images/recursos-template/material-embalagem.png" alt="">
+                        </div>
+                        <div class="link" data-id="2" data-title="Material de Expediente">
+                            <img src="images/recursos-template/material-expediente.png" alt="">
+                        </div>
+                        <div class="link" data-id="3" data-title="Material de Manutenção">
+                            <img src="images/recursos-template/material-manutencao.png" alt="">
+                        </div>
+                        <div class="link" data-id="4" data-title="Material de Consumo">
+                            <img src="images/recursos-template/material-consumo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="conteudos">
+                        <div class="content active" data-id="1">
+                            <div class="row">
+                                <div class="col-lg-12">
+        
+                                    <p>Definição de objetivos organizacionais e desenvolvimento de um plano de ação para alcançar os resultados fixados. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content" data-id="2">
+                            <div class="row">
+                                <div class="col-lg-12">
+        
+                                    <p>Coordenação e alocação de recursos materiais, financeiros ou humanos, de acordo com o planejamento.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content" data-id="3">
+                            <div class="row">
+                                <div class="col-lg-12">
+        
+                                    <p>Trata-se da transformação dos planos em ação. Os liderados executam as atividades que devem ser feitas, sob orientações do líder. As relações hierárquicas devem estar claramente definidas, assim como o grau de participação e colaboração de cada um para a realização dos objetivos definidos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content" data-id="4">
+                            <div class="row">
+                                <div class="col-lg-12">
+        
+                                    <p>Coordenação de atitudes e esforços de todas as unidades de trabalho da organização para alcançar as metas fixadas no planejamento. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Lembrar de sempre definir uma altura mínima para o conteudo: <br><strong>.aba[data-style="03"][data-page="11"] .conteudos {min-height: 209px} </strong><br>onde esse 209 é só um exemplo.</p>
+            </div>
+        </div>
+        <!--------------- FIM ABA 02 --------------->
+
+- trigger: aba_03
+  scope: html
+  mTime: 1502819752638
+  text: |
+        <!--------------- INÍCIO ABA 03 --------------->
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 centraliza-recurso">
+                <div class="aba hidden-xs" data-style="03" data-fallback="accordion">
+                    <div class="cabecalho">
+                        <div class="link active" data-id="1" data-title="Planejamento">
+                            Planejamento
+                        </div>
+                        <div class="link" data-id="2" data-title="Organização">
+                            Organização
+                        </div>
+                        <div class="link" data-id="3" data-title="Direção">
+                            Direção
+                        </div>
+                        <div class="link" data-id="4" data-title="Coordernação">
+                            Coordenação
+                        </div>
+                        <div class="link" data-id="5" data-title="Controle">
+                            Controle
+                        </div>
+                    </div>
+                    <div class="conteudos">
+                        <div class="content active" data-id="1">
+        
+                            <div class="col-lg-12">
+                                <img src="images/fotos/planejamento.png" class="img-responsive img-rounded alinha-direita" width="245">
+                                <p>Definição de objetivos organizacionais e desenvolvimento de um plano de ação para alcançar os resultados fixados. </p>
+                            </div>
+        
+                        </div>
+                        <div class="content" data-id="2">
+                            <div class="col-lg-12">
+                                <img src="images/fotos/organizacao.png" class="img-responsive img-rounded alinha-direita" width="245">
+                                <p>Coordenação e alocação de recursos materiais, financeiros ou humanos, de acordo com o planejamento.</p>
+                            </div>
+                        </div>
+                        <div class="content" data-id="3">
+                            <div class="col-lg-12">
+                                <img src="images/fotos/direcao.png" class="img-responsive img-rounded alinha-direita" width="227">
+                                <p>Trata-se da transformação dos planos em ação. Os liderados executam as atividades que devem ser feitas, sob orientações do líder. As relações hierárquicas devem estar claramente definidas, assim como o grau de participação e colaboração de cada um para a realização dos objetivos definidos.</p>
+                            </div>
+                        </div>
+                        <div class="content" data-id="4">
+                            <div class="col-lg-12">
+                                <img src="images/fotos/coordenacao.png" class="img-responsive img-rounded alinha-direita" width="245">
+                                <p>Coordenação de atitudes e esforços de todas as unidades de trabalho da organização para alcançar as metas fixadas no planejamento. </p>
+                            </div>
+                        </div>
+                        <div class="content" data-id="5">
+                            <div class="col-lg-12">
+                                <img src="images/fotos/controle.png" class="img-responsive img-rounded alinha-direita" width="245">
+                                <p>Acompanhamento do processo de execução do que foi planejado e avaliação do desempenho dos liderados, para assegurar que as ações empregadas são as mais compatíveis com as expectativas da empresa. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--------------- FIM ABA 03 --------------->
+
+- trigger: aba_04
+  scope: html
+  mTime: 1502819770669
+  text: |
+        <!--------------- INÍCIO ABA 04 --------------->
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 centraliza-recurso">
+                <div class="aba hidden-xs" data-style="04" data-fallback="accordion">
+                    <div class="cabecalho">
+                        <div class="link active" data-id="1">
+                            1
+                        </div>
+                        <div class="link" data-id="2">
+                            2
+                        </div>
+                        <div class="link" data-id="3">
+                            3
+                        </div>
+                        <div class="link" data-id="4">
+                            4
+                        </div>
+                        <div class="link" data-id="5">
+                            5
+                        </div>
+                    </div>
+                    <div class="conteudos">
+                        <div class="content active" data-id="1">
+        
+                            <div class="col-lg-12">
+                                <img src="images/fotos/planejamento.png" class="img-responsive img-rounded alinha-direita" width="245">
+                                <p>Definição de objetivos organizacionais e desenvolvimento de um plano de ação para alcançar os resultados fixados. </p>
+                            </div>
+        
+                        </div>
+                        <div class="content" data-id="2">
+                            <div class="col-lg-12">
+                                <img src="images/fotos/organizacao.png" class="img-responsive img-rounded alinha-direita" width="245">
+                                <p>Coordenação e alocação de recursos materiais, financeiros ou humanos, de acordo com o planejamento.</p>
+                            </div>
+                        </div>
+                        <div class="content" data-id="3">
+                            <div class="col-lg-12">
+                                <img src="images/fotos/direcao.png" class="img-responsive img-rounded alinha-direita" width="227">
+                                <p>Trata-se da transformação dos planos em ação. Os liderados executam as atividades que devem ser feitas, sob orientações do líder. As relações hierárquicas devem estar claramente definidas, assim como o grau de participação e colaboração de cada um para a realização dos objetivos definidos.</p>
+                            </div>
+                        </div>
+                        <div class="content" data-id="4">
+                            <div class="col-lg-12">
+                                <img src="images/fotos/coordenacao.png" class="img-responsive img-rounded alinha-direita" width="245">
+                                <p>Coordenação de atitudes e esforços de todas as unidades de trabalho da organização para alcançar as metas fixadas no planejamento. </p>
+                            </div>
+                        </div>
+                        <div class="content" data-id="5">
+                            <div class="col-lg-12">
+                                <img src="images/fotos/controle.png" class="img-responsive img-rounded alinha-direita" width="245">
+                                <p>Acompanhamento do processo de execução do que foi planejado e avaliação do desempenho dos liderados, para assegurar que as ações empregadas são as mais compatíveis com as expectativas da empresa. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------- FIM ABA 04 --------------->
+
+- trigger: lista_01
+  scope: html
+  mTime: 1502819854613
+  text: |
+        <!-------------------------------------------INÍCIO LISTA-INTERATIVA 01------------------------------------------->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="lista hidden-xs" data-fallback="accordion" data-style="01">
+                    <div class="linha">
+                        <div class="cabecalho" data-title="Comunicar">
+                            <span class="title">Comunicar</span>
+                        </div>
+                        <div class="conteudo">
+                            <p>É a nossa comunicação interna, quando fazemos uma reflexão sobre determinada ideia, sentimento ou desejo. É aquela mensagem que circula pela nossa mente, ou seja, o nosso pensamento. A forma como a mente processa uma informação influenciará a nossa interação com o outro.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-title="Falar">
+                            <span class="title">Falar</span>
+                        </div>
+                        <div class="conteudo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus, accusantium, exercitationem possimus eius temporibus, saepe voluptas corporis aperiam quos, quas cupiditate modi ea nihil.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------FIM LISTA-INTERATIVA 01------------------------------------------->
+
+- trigger: lista_02
+  scope: html
+  mTime: 1502819904364
+  text: |
+        <!-------------------------------------------INÍCIO LISTA-INTERATIVA 02------------------------------------------->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="lista" data-style="02">
+                    <div class="linha">
+                        <div class="cabecalho" data-title="Titulo numero 1">
+                            <span class="title">1</span>
+                        </div>
+                        <div class="conteudo">
+                            <p>É a nossa comunicação interna, quando fazemos uma reflexão sobre determinada ideia, sentimento ou desejo. É aquela mensagem que circula pela nossa mente, ou seja, o nosso pensamento. A forma como a mente processa uma informação influenciará a nossa interação com o outro.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-title="Titulo numero 2">
+                            <span class="title">2</span>
+                        </div>
+                        <div class="conteudo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus, accusantium, exercitationem possimus eius temporibus, saepe voluptas corporis aperiam quos, quas cupiditate modi ea nihil.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-title="Titulo numero 3">
+                            <span class="title">3</span>
+                        </div>
+                        <div class="conteudo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------FIM LISTA-INTERATIVA 02------------------------------------------->
+
+- trigger: lista_03
+  scope: html
+  mTime: 1502819939575
+  text: |
+        <!-------------------------------------------INÍCIO LISTA-INTERATIVA 03------------------------------------------->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="lista" data-style="03">
+                    <div class="linha">
+                        <div class="cabecalho" data-title="Titulo numero 1">
+                            <span class="title">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="conteudo">
+                            <p>É a nossa comunicação interna, quando fazemos uma reflexão sobre determinada ideia, sentimento ou desejo. É aquela mensagem que circula pela nossa mente, ou seja, o nosso pensamento. A forma como a mente processa uma informação influenciará a nossa interação com o outro.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-title="Titulo numero 2">
+                            <span class="title">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="conteudo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus, accusantium, exercitationem possimus eius temporibus, saepe voluptas corporis aperiam quos, quas cupiditate modi ea nihil.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-title="Titulo numero 3">
+                            <span class="title">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                        <div class="conteudo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------FIM LISTA-INTERATIVA 03------------------------------------------->
+
+- trigger: lista_04
+  scope: html
+  mTime: 1502819971712
+  text: |
+        <!-------------------------------------------INÍCIO LISTA-INTERATIVA 04------------------------------------------->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="lista hidden-xs" data-fallback="accordion" data-style="04">
+                    <div class="linha">
+                        <div class="cabecalho" data-id="1" data-title="Amor pelas pessoas">
+                            <span class="title"></span>
+                        </div>
+                        <div class="conteudo">
+                            <span class="conteudo-title">Amor pelas pessoas</span>
+                            <p>É a nossa comunicação interna, quando fazemos uma reflexão sobre determinada ideia, sentimento ou desejo. É aquela mensagem que circula pela nossa mente, ou seja, o nosso pensamento. A forma como a mente processa uma informação influenciará a nossa interação com o outro.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-id="2" data-title="A crença em si mesmo">
+                            <span class="title"></span>
+                        </div>
+                        <div class="conteudo">
+                            <span class="conteudo-title">A crença em si mesmo</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus, accusantium, exercitationem possimus eius temporibus, saepe voluptas corporis aperiam quos, quas cupiditate modi ea nihil.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-id="3" data-title="A paixão pelo trabalho">
+                            <span class="title"></span>
+                        </div>
+                        <div class="conteudo">
+                            <span class="conteudo-title">A paixão pelo trabalho</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------FIM LISTA-INTERATIVA 04------------------------------------------->
+
+- trigger: lista_05
+  scope: html
+  mTime: 1502820019741
+  text: |
+        <!-------------------------------------------INÍCIO LISTA-INTERATIVA 05------------------------------------------->
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="lista" data-style="05">
+                    <div class="linha">
+                        <div class="cabecalho" data-id="1">
+                            <span class="title"></span>
+                        </div>
+                        <div class="conteudo">
+                            <p>É a nossa comunicação interna, quando fazemos uma reflexão sobre determinada ideia, sentimento ou desejo. É aquela mensagem que circula pela nossa mente, ou seja, o nosso pensamento. A forma como a mente processa uma informação influenciará a nossa interação com o outro.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-id="2">
+                            <span class="title"></span>
+                        </div>
+                        <div class="conteudo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus, accusantium, exercitationem possimus eius temporibus, saepe voluptas corporis aperiam quos, quas cupiditate modi ea nihil.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-id="3">
+                            <span class="title"></span>
+                        </div>
+                        <div class="conteudo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus.</p>
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="cabecalho" data-id="4">
+                            <span class="title"></span>
+                        </div>
+                        <div class="conteudo">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam ex molestiae impedit veniam necessitatibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------FIM LISTA-INTERATIVA 05------------------------------------------->
+
+- trigger: tabela_horizontal
+  scope: html
+  mTime: 1502820061612
+  text: |
+        <!-- inicio TABELA-HORIZONTAL -->
+        <div class="row">
+            <div class="col-lg-8 col-md-9 centraliza-recurso">
+        
+                <table border="1" class="table table-curved">
+                    <tr>
+                        <th class="tb-left">Período</th>
+                        <th class="tb-right">Evolução Histórica</th>
+                    </tr>
+                    <tr>
+                        <td>Século XVII</td>
+                        <td>Surgimento dos bancos</td>
+                    </tr>
+        
+                    <tr class="bg-cor-2">
+                        <td>1870</td>
+                        <td>Surgem as primeiras formas de varejo de departamento, caraterizado pela venda de produtos em massa</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Fim do século XIX</td>
+                        <td>Início das vendas por catálogo</td>
+                    </tr>
+        
+                    <tr class="bg-cor-2">
+                        <td>Início do século XX</td>
+                        <td>Surgimento das primeiras grandes lojas</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Década de 20</td>
+                        <td>Surgimento do varejo em modelo <em>self-service</em></td>
+                    </tr>
+        
+                    <tr class="bg-cor-2">
+                        <td>Década de 30</td>
+                        <td>Popularização do varejo em modelo <em>self-service</em></td>
+                    </tr>
+        
+                    <tr>
+                        <td>Década de 40</td>
+                        <td>Início das lojas de conveniência</td>
+                    </tr>
+                </table>
+        
+            </div>
+        </div>
+        <!-- fim TABELA-HORIZONTAL -->
+
+- trigger: tabela_vertical
+  scope: html
+  mTime: 1502820088069
+  text: |
+        <!-- inicio TABELA-VERTICAL -->
+        <div class="row">
+            <div class="col-lg-8 col-md-9 centraliza-recurso">
+        
+                <table border="1" class="table-responsive table table-curved">
+                    <tr>
+                        <th>S</th>
+                        <td><em>Specific</em> (específica)</td>
+                        <td>Em vez de “Nova Sede”, defina claramente: “Construir sede própria com X salas, no bairro Y, estacionamento para Z carros, etc.”.</td>
+                    </tr>
+        
+                    <tr class="bg-cor-2">
+                        <th>M</th>
+                        <td><em>Measurable</em> (mensurável)</td>
+                        <td>Em vez de “Baixo Custo”, deve ser “Ao custo máximo de R$ 300.000,00”.</td>
+                    </tr>
+        
+                    <tr>
+                        <th>A</th>
+                        <td><em>Agreed upon</em> (acordada)</td>
+                        <td>Aceita pela equipe, mas sempre embutindo um desafio. Por exemplo: economizar 10% do valor máximo.</td>
+                    </tr>
+        
+                    <tr class="bg-cor-2">
+                        <th>R</th>
+                        <td><em>Realistic</em> (realista)</td>
+                        <td>Deve embutir um desafio que incentive a inovação, mas sempre factível, levando‐se em consideração a disponibilidade dos recursos necessários, das condicionantes políticas, econômicas e da capacidade organizacional (pessoas, tecnologia, infraestrutura, etc.). Por exemplo: Elaborar a planta da sede considerando os recursos disponíveis.</td>
+                    </tr>
+        
+                    <tr>
+                        <th>T</th>
+                        <td><em>Time-constrained</em> (limitada pelo tempo)</td>
+                        <td>Deve comportar sempre um prazo-limite para ser atingida. Por exemplo: 20/12/2020.</td>
+                    </tr>
+                </table>
+        
+            </div>
+        </div>
+        <!-- FIM TABELA-VERTICAL -->
+
+- trigger: videoaula
+  scope: html
+  mTime: 1502820098070
+  text: |
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 centraliza-recurso">
+                <!-- video embedado -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" width="640" height="360" src="https://www.youtube.com/embed/BGuo4ImcvpU?enablejsapi=1&amp;version=3&amp;playerapiid=ytplayer&amp;showinfo=0&amp;modestbranding=1&amp;fs=1&amp;rel=0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+        
+- trigger: accordion_02
+  scope: html
+  mTime: 1502820108182
+  text: |
+        
+        <!--  INÍCIO ACCORDION 2  -->
+        <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-11 col-xs-12 centraliza-recurso">
+
+                <div class="accordion" data-id="1" data-type="2" data-page="11">
+
+                    <div class="accordion-element-container">
+                        <div class="accordion-title">
+                            AAAAAAAAAAAAAAAAAAAA<i class="fa  icone-mais"></i>
+                        </div>
+                        <div class="accordion-content">
+
+                            <p>aaaaaaaaaaaaaaa</p>
+
+                        </div>
+                    </div>
+
+                    <div class="accordion-element-container">
+                        <div class="accordion-title">
+                            AAAAAAAAAAAAAAAAAAAA<i class="fa  icone-mais"></i>
+                        </div>
+                        <div class="accordion-content">
+
+                            <p>aaaaaaaaaaaaaaa</p>
+
+
+                        </div>
+                    </div>
+
+                    <div class="accordion-element-container">
+                        <div class="accordion-title">
+                            AAAAAAAAAAAAAAAAAAAA<i class="fa  icone-mais"></i>
+                        </div>
+                        <div class="accordion-content">
+
+                            <p>aaaaaaaaaaaaaaa</p>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
+        <!--  FIM ACCORDION 2  -->
